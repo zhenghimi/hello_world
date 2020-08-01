@@ -1,0 +1,32 @@
+<!--pages/movie-detail/movie-detail.wxml-->
+<import src="../../templates/movie-templates/movie-templates.wxml"/>
+<view class="container">
+   <view class="summary">
+     <view class="movie_img">
+       <image src="{{movie_img}}"></image>
+     </view>
+     <view class="movie_info">
+       <text class="movie_name">{{name}}</text>
+       <text class="movie_category">{{movie_category}}</text>
+       <template is="star" data="{{rate}}"></template>
+     </view>
+   </view>
+   <view class="intro description">
+     <view class="title">简介</view>
+     <text class="content">{{description}}</text>
+   </view>
+   <view class="intro actor">
+      <text class="title">演员</text>
+      <scroll-view scroll-x="true">
+       <view class="movie-actor">
+       <block wx:for="{{actor}}" wx:key="{{index}}">
+         <view class="item">
+           <image class="item-image" src="{{item.actorImg}}"></image>
+           <text class="item-title name">{{item.name}}</text>
+           <text class="item-title role">{{item.role}}</text>
+         </view>
+         </block>
+        </view>
+      </scroll-view>
+   </view>
+</view>

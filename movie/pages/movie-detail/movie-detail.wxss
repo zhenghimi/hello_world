@@ -1,0 +1,90 @@
+/* pages/movie-detail/movie-detail.wxss */
+@import '../../templates/movie-templates/movie-templates.wxss';
+page{
+  background-color: #faf6f3;
+}
+.summary{
+  display: flex;
+  margin: 30rpx;
+}
+
+.summary .movie_img{
+  width: 200rpx;
+  height: 280rpx;
+  border-radius: 8rpx;
+  border: 1px solid #ddd;
+  margin-right: 30rpx;
+  box-shadow: 1px 3px 5px 0 rgba(0, 0, 0, .3);
+}
+.summary .movie_img image{
+  width: 100%;
+  height: 100%;
+  border-radius: 8rpx;
+}
+.movie_info{
+  /* 伸缩剩余空间 */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+}
+.movie_info .movie_name{
+  font-size: 23px;
+  margin-bottom: 30rpx;
+}
+.movie_info .movie_category{
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10rpx;
+}
+.star_box .star_score{
+  font-size: 23px;
+}
+.stars .icon-xingxing{
+  font-size: 18px;
+}
+.intro{
+  margin: 0 30rpx 40rpx;
+  padding-top: 20rpx;
+}
+.intro .title{
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom:12rpx;
+}
+.description .content{
+  color: #333;
+  font-size: 13px;
+}
+.movie-actor {
+  display: flex;
+
+}
+.movie-actor .item{
+  display: flex;
+  flex-direction: column;
+  width: 160rpx;
+  margin-right: 30rpx;
+}
+.movie-actor .item .item-image{
+  width: 160rpx;
+  height: 220rpx;
+  border-radius: 8rpx;
+  border: 1px solid #ddd;
+  margin-bottom: 10rpx;
+  margin-top: 20rpx;
+}
+.movie-actor .item .name{
+  font-size: 12px;
+  color: #333;
+  /* 不换行 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  
+}
+.movie-actor .item .role{
+  font-size: 11px;
+  color: #999;
+}

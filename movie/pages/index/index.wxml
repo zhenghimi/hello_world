@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<import src="../../templates/movie-templates/movie-templates.wxml" />
+
+<view class="container">
+   <!--搜索框  -->
+   <navigator class="search" url="/pages/search/search">
+     <icon type="search" size="10"></icon>搜索
+   </navigator>
+   
+   <!-- 轮播图 -->
+   <view class="banner_box">
+      <swiper class="banner" indicator-dots="true" indicator-color="rgba(255,255,255,0.3)" indicator-active-color="#42bd56" autoplay="true" circular="true">
+      <block wx:for="{{bannerData}}" wx:key="{{index}}">
+        <swiper-item>
+          <navigator url="../../templates/movie-templates/movie-templates">
+            <image src="{{item.banner_img}}"></image>
+          </navigator>
+        </swiper-item>
+      </block>
+      </swiper>
+   </view>
+
+    <!-- 电影分类专区 -->
+   <block wx:for="{{subJectData}}" wx:key="{{index}}" wx:for-item="subItem">
+   <template is="movie_subject" data="{{subItem}}"></template>
+    </block>
+</view>

@@ -1,0 +1,63 @@
+@import '../../lib/fonticon/iconfont.wxss';
+/* 电影专区 */
+.subject{
+  overflow: hidden;
+  margin-bottom: 40rpx;
+}
+.subject .subject_top{
+  display: flex;
+  justify-content: space-between;
+  margin: 26rpx 30rpx;
+  font-size: 28rpx;
+}
+.subject .subject_top .lookMore{
+  color: #42bd56;
+}
+
+.movieList{
+  white-space: nowrap;
+}
+.movie_item{
+  display: inline-block;
+  width: 160rpx;
+  margin-left: 30rpx;
+}
+.movie_item:last-child{
+  margin-right: 30rpx;
+}
+.movie_item .movie_img{
+  width: 160rpx;
+  height: 250rpx;
+  border-radius: 8rpx;
+  border: 1px solid #ddd;
+}
+.movie_item .movie_img image{
+  border-radius: 8rpx;
+}
+
+.movie_item .name{
+  font-size: 28rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.star_box{
+  display: flex;
+  align-items: center;
+}
+
+.stars{
+  display: flex;
+  margin-right: 10rpx;
+}
+.stars .icon-xingxing{
+  font-size: 22rpx;
+  color: #ddd;
+}
+.stars .light{
+  color: #efc15f;
+}
+.star_box .star_score{
+  color: #999;
+  font-size: 22rpx;
+}

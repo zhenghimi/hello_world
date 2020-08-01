@@ -1,0 +1,39 @@
+<template name="movie_subject">
+   <view class="subject">
+     <view class="subject_top">
+       <text class="title">{{subItem.subjectTitle}}</text>
+       <navigator class="lookMore" url="/pages/more-movie/more-movie?title={{subItem.subjectTitle}}">查看更多 ></navigator>
+     </view>
+     <scroll-view class="movieList" scroll-x="true">
+        <block wx:for="{{subItem.movieList}}" wx:key="{{index}}">
+        <!-- ...item是 es6的语法，展开item-->
+           <template is="movieItem" data="{{...item}}"></template>
+        </block>
+     </scroll-view>
+   </view>
+</template>
+
+<template name="movieItem">
+<navigator class="movie_item" url="../../pages/movie-detail/movie-detail">
+            <view class="movie_img">
+              <image src="{{movie_img}}"></image>
+            </view>
+            <!-- 因为上面设置了...item，所以下面不用item.name获取数据 -->
+            <view class="name">{{name}}</view>
+            <template is="star" data="{{rate}}"></template>
+          </navigator>
+</template>
+
+<!-- 引入wxs，星星的操作 -->
+ <wxs src='../../wxs/star.wxs' module='starUtil' />
+<template name="star">
+  <view class="star_box">
+              <view class="stars">
+              <block wx:for="{{starUtil.formRate(rate)}}" wx:key="{{index}}">
+              <!-- item==1?'light':''是动态渲染星星 -->
+                <view class="iconfont icon-xingxing {{item==1?'light':''}}"></view>
+              </block>
+              </view>
+              <text class="star_score">{{rate}}</text>
+            </view>
+</template>
