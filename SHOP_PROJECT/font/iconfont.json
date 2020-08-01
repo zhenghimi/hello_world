@@ -1,0 +1,93 @@
+{
+  "id": "1960468",
+  "name": "商城项目",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "679050",
+      "name": "商城-男装女装",
+      "font_class": "shangchengnanzhuangnvzhuang",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "867406",
+      "name": "汽车",
+      "font_class": "che1-copy",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "1629887",
+      "name": "图书",
+      "font_class": "4259",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "4332975",
+      "name": "珠宝",
+      "font_class": "35",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "5179360",
+      "name": "零食",
+      "font_class": "-fen-",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "7391212",
+      "name": "清洁",
+      "font_class": "qingjie",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "9637215",
+      "name": "厨具",
+      "font_class": "chuju",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "14511675",
+      "name": "电脑",
+      "font_class": "diannao",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "259484",
+      "name": "手机数码",
+      "font_class": "shoujishuma",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "1331517",
+      "name": "alarm,闹钟,时钟,倒计时,时间",
+      "font_class": "alarm",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "2468473",
+      "name": "11类家用电器x16",
+      "font_class": "leijiayongdianqix",
+      "unicode": "e68b",
+      "unicode_decimal": 59019
+    },
+    {
+      "icon_id": "5650484",
+      "name": "电脑",
+      "font_class": "icon-test",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    }
+  ]
+}

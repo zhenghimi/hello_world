@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商城系统</title>
+    <meta name="description" content="网上购物商城">
+    <meta name="keywords" content="网上购物，网上商城，手机，电脑">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <!-- 头部开始 -->
+    <div class="top-nav">
+        <div class="w clearfix">
+            <div class="login">
+                <a class="h" href="#">你好，请登录！</a>
+                <a href="#">免费注册</a>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <a href="#" class="list">我的订单</a>
+                </li>
+                <li>
+                    <a href="#" class="list">购物车</a>
+                </li>
+                <li>
+                    <a href="#" class="list">收藏夹</a>
+                </li>
+                <li>
+                    <a href="#" class="list">联系客服</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- 头部结束 -->
+    <!-- 搜索框开始 -->
+    <div class="serachWrap">
+        <div class="w clearfix">
+            <a href="#" class="logo">小D商城</a>
+            <div class="search-box">
+                <input type="text" id="searchInput" class="searchInput" placeholder="请输入商品名称">
+                <button class="serach-btn">搜索</button>
+                <!-- 搜索框下面的建议 -->
+                    <ul id="search-suggest" class="search-suggest">
+                       <!--  <li>html5</li>
+                        <li>css3</li>
+                        <li>JS</li> -->
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 搜索框结束 -->
+    <!-- 商品分类开始 -->
+    <div class="w menu clearfix">
+        <div class="aside-nav">
+            <ul class="nav-list">
+                <li class="list-item">
+                    <a href="#" class="item-href"><span class="iconfont icon-leijiayongdianqix"></span>家用电器</a>
+                    <div class="item-menu">
+                        <div class="subcate">
+                            <dl class="subcate_item">
+                              <dt class="subcate_title">
+                                <a href="#" class="subcate_link">电视<i class="subcate_title_arrow"> > </i></a>
+                              </dt>
+                              <dd class="subcate_con clearfix">
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                              </dd>
+                            </dl>
+                            <dl class="subcate_item">
+                                <dt class="subcate_title">
+                                  <a href="#" class="subcate_link">电视<i class="subcate_title_arrow"> > </i></a>
+                                </dt>
+                                <dd class="subcate_con clearfix">
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                </dd>
+                              </dl>
+                              <dl class="subcate_item">
+                                <dt class="subcate_title">
+                                  <a href="#" class="subcate_link">电视<i class="subcate_title_arrow"> > </i></a>
+                                </dt>
+                                <dd class="subcate_con clearfix">
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                </dd>
+                              </dl>
+                        </div>
+                        <div class="guessLike">
+                            <h3>猜你喜欢</h3>
+                            <ul class="like_list clearfix">
+                                <li class="like-item">
+                                    <a href="#" class="like_lk">
+                                        <img src="../img/good.png" alt="">
+                                        <p>分布式无线路由器</p>
+                                    </a>
+                                </li>
+                                <li class="like-item">
+                                    <a href="#" class="like_lk">
+                                        <img src="../img/good.png" alt="">
+                                        <p>分布式无线路由器</p>
+                                    </a>
+                                </li>
+                                <li class="like-item">
+                                    <a href="#" class="like_lk">
+                                        <img src="../img/good.png" alt="">
+                                        <p>分布式无线路由器</p>
+                                    </a>
+                                </li>
+                                <li class="like-item">
+                                    <a href="#" class="like_lk">
+                                        <img src="../img/good.png" alt="">
+                                        <p>分布式无线路由器</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="item-href"><span class="iconfont icon-shoujishuma"></span>手机数码</a>
+                    <div class="item-menu">
+                        <div class="subcate">
+                            <dl class="subcate_item">
+                              <dt class="subcate_title">
+                                <a href="#" class="subcate_link">电视11<i class="subcate_title_arrow"> > </i></a>
+                              </dt>
+                              <dd class="subcate_con clearfix">
+                                <a href="#" class="subcate_con_lk">超薄电视11</a>
+                                <a href="#" class="subcate_con_lk">超薄电视11</a>
+                                <a href="#" class="subcate_con_lk">超薄电视11</a>
+                                <a href="#" class="subcate_con_lk">超薄电视11</a>
+                                <a href="#" class="subcate_con_lk">超薄电视11</a>
+                                <a href="#" class="subcate_con_lk">超薄电视11</a>
+                              </dd>
+                            </dl>
+                            <dl class="subcate_item">
+                                <dt class="subcate_title">
+                                  <a href="#" class="subcate_link">电视<i class="subcate_title_arrow"> > </i></a>
+                                </dt>
+                                <dd class="subcate_con clearfix">
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                </dd>
+                              </dl>
+                              <dl class="subcate_item">
+                                <dt class="subcate_title">
+                                  <a href="#" class="subcate_link">电视<i class="subcate_title_arrow"> > </i></a>
+                                </dt>
+                                <dd class="subcate_con clearfix">
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                </dd>
+                              </dl>
+                        </div>
+                        <div class="guessLike">
+                          <h3>猜你喜欢</h3>
+                          <ul class="like_list clearfix">
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="item-href"><span class="iconfont icon-diannao"></span>电脑办公</a>
+                    <div class="item-menu">
+                        <div class="subcate">
+                            <dl class="subcate_item">
+                              <dt class="subcate_title">
+                                <a href="#" class="subcate_link">电脑办公<i class="subcate_title_arrow"> > </i></a>
+                              </dt>
+                              <dd class="subcate_con clearfix">
+                                <a href="#" class="subcate_con_lk">超薄电视22</a>
+                                <a href="#" class="subcate_con_lk">超薄电视22</a>
+                                <a href="#" class="subcate_con_lk">超薄电视22</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                              </dd>
+                            </dl>
+                            <dl class="subcate_item">
+                                <dt class="subcate_title">
+                                  <a href="#" class="subcate_link">电视<i class="subcate_title_arrow"> > </i></a>
+                                </dt>
+                                <dd class="subcate_con clearfix">
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                </dd>
+                              </dl>
+                              <dl class="subcate_item">
+                                <dt class="subcate_title">
+                                  <a href="#" class="subcate_link">电视<i class="subcate_title_arrow"> > </i></a>
+                                </dt>
+                                <dd class="subcate_con clearfix">
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                </dd>
+                              </dl>
+                        </div>
+                        <div class="guessLike">
+                          <h3>猜你喜欢</h3>
+                          <ul class="like_list clearfix">
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="item-href"><span class="iconfont icon-chuju"></span>家具厨具</a>
+                    <div class="item-menu">
+                        <div class="subcate">
+                            <dl class="subcate_item">
+                              <dt class="subcate_title">
+                                <a href="#" class="subcate_link">家具厨具<i class="subcate_title_arrow"> > </i></a>
+                              </dt>
+                              <dd class="subcate_con clearfix">
+                                <a href="#" class="subcate_con_lk">超薄电视333333</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                              </dd>
+                            </dl>
+                            <dl class="subcate_item">
+                                <dt class="subcate_title">
+                                  <a href="#" class="subcate_link">电视<i class="subcate_title_arrow"> > </i></a>
+                                </dt>
+                                <dd class="subcate_con clearfix">
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                </dd>
+                              </dl>
+                              <dl class="subcate_item">
+                                <dt class="subcate_title">
+                                  <a href="#" class="subcate_link">电视<i class="subcate_title_arrow"> > </i></a>
+                                </dt>
+                                <dd class="subcate_con clearfix">
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                </dd>
+                              </dl>
+                        </div>
+                        <div class="guessLike">
+                          <h3>猜你喜欢</h3>
+                          <ul class="like_list clearfix">
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="item-href"><span class="iconfont icon-shangchengnanzhuangnvzhuang"></span>男装女装</a>
+                    <div class="item-menu">
+                        <div class="subcate">
+                            <dl class="subcate_item">
+                              <dt class="subcate_title">
+                                <a href="#" class="subcate_link">男装女装<i class="subcate_title_arrow"> > </i></a>
+                              </dt>
+                              <dd class="subcate_con clearfix">
+                                <a href="#" class="subcate_con_lk">男装女装</a>
+                                <a href="#" class="subcate_con_lk">超薄电视4444444444</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                              </dd>
+                            </dl>
+                            <dl class="subcate_item">
+                                <dt class="subcate_title">
+                                  <a href="#" class="subcate_link">电视<i class="subcate_title_arrow"> > </i></a>
+                                </dt>
+                                <dd class="subcate_con clearfix">
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                </dd>
+                              </dl>
+                              <dl class="subcate_item">
+                                <dt class="subcate_title">
+                                  <a href="#" class="subcate_link">电视<i class="subcate_title_arrow"> > </i></a>
+                                </dt>
+                                <dd class="subcate_con clearfix">
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                </dd>
+                              </dl>
+                        </div>
+                        <div class="guessLike">
+                          <h3>猜你喜欢</h3>
+                          <ul class="like_list clearfix">
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="item-href"><span class="iconfont icon-qingjie"></span>个户清洁</a>
+                    <div class="item-menu">
+                        <div class="subcate">
+                            <dl class="subcate_item">
+                              <dt class="subcate_title">
+                                <a href="#" class="subcate_link">个户清洁<i class="subcate_title_arrow"> > </i></a>
+                              </dt>
+                              <dd class="subcate_con clearfix">
+                                <a href="#" class="subcate_con_lk">个户清洁</a>
+                                <a href="#" class="subcate_con_lk">个户清洁55555555</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                              </dd>
+                            </dl>
+                            <dl class="subcate_item">
+                                <dt class="subcate_title">
+                                  <a href="#" class="subcate_link">电视<i class="subcate_title_arrow"> > </i></a>
+                                </dt>
+                                <dd class="subcate_con clearfix">
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                </dd>
+                              </dl>
+                              <dl class="subcate_item">
+                                <dt class="subcate_title">
+                                  <a href="#" class="subcate_link">电视<i class="subcate_title_arrow"> > </i></a>
+                                </dt>
+                                <dd class="subcate_con clearfix">
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                </dd>
+                              </dl>
+                        </div>
+                        <div class="guessLike">
+                          <h3>猜你喜欢</h3>
+                          <ul class="like_list clearfix">
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="item-href"><span class="iconfont icon-che1-copy"></span>汽车</a>
+                    <div class="item-menu">
+                        <div class="subcate">
+                            <dl class="subcate_item">
+                              <dt class="subcate_title">
+                                <a href="#" class="subcate_link">汽车<i class="subcate_title_arrow"> > </i></a>
+                              </dt>
+                              <dd class="subcate_con clearfix">
+                                <a href="#" class="subcate_con_lk">汽车</a>
+                                <a href="#" class="subcate_con_lk">汽车6666</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                              </dd>
+                            </dl>
+                            <dl class="subcate_item">
+                                <dt class="subcate_title">
+                                  <a href="#" class="subcate_link">电视<i class="subcate_title_arrow"> > </i></a>
+                                </dt>
+                                <dd class="subcate_con clearfix">
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                </dd>
+                              </dl>
+                              <dl class="subcate_item">
+                                <dt class="subcate_title">
+                                  <a href="#" class="subcate_link">电视<i class="subcate_title_arrow"> > </i></a>
+                                </dt>
+                                <dd class="subcate_con clearfix">
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                </dd>
+                              </dl>
+                        </div>
+                        <div class="guessLike">
+                          <h3>猜你喜欢</h3>
+                          <ul class="like_list clearfix">
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="item-href"><span class="iconfont icon--fen-"></span>零食美食</a>
+                    <div class="item-menu">
+                        <div class="subcate">
+                            <dl class="subcate_item">
+                              <dt class="subcate_title">
+                                <a href="#" class="subcate_link">零食美食<i class="subcate_title_arrow"> > </i></a>
+                              </dt>
+                              <dd class="subcate_con clearfix">
+                                <a href="#" class="subcate_con_lk">零食美食</a>
+                                <a href="#" class="subcate_con_lk">零食美食7777777</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                              </dd>
+                            </dl>
+                            <dl class="subcate_item">
+                                <dt class="subcate_title">
+                                  <a href="#" class="subcate_link">电视<i class="subcate_title_arrow"> > </i></a>
+                                </dt>
+                                <dd class="subcate_con clearfix">
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                </dd>
+                              </dl>
+                              <dl class="subcate_item">
+                                <dt class="subcate_title">
+                                  <a href="#" class="subcate_link">电视<i class="subcate_title_arrow"> > </i></a>
+                                </dt>
+                                <dd class="subcate_con clearfix">
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                </dd>
+                              </dl>
+                        </div>
+                        <div class="guessLike">
+                          <h3>猜你喜欢</h3>
+                          <ul class="like_list clearfix">
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="item-href"><span class="iconfont icon-35"></span>钟表珠宝</a>
+                    <div class="item-menu">
+                        <div class="subcate">
+                            <dl class="subcate_item">
+                              <dt class="subcate_title">
+                                <a href="#" class="subcate_link">钟表珠宝<i class="subcate_title_arrow"> > </i></a>
+                              </dt>
+                              <dd class="subcate_con clearfix">
+                                <a href="#" class="subcate_con_lk">钟表珠宝</a>
+                                <a href="#" class="subcate_con_lk">钟表珠宝88888888</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                              </dd>
+                            </dl>
+                            <dl class="subcate_item">
+                                <dt class="subcate_title">
+                                  <a href="#" class="subcate_link">电视<i class="subcate_title_arrow"> > </i></a>
+                                </dt>
+                                <dd class="subcate_con clearfix">
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                </dd>
+                              </dl>
+                              <dl class="subcate_item">
+                                <dt class="subcate_title">
+                                  <a href="#" class="subcate_link">电视<i class="subcate_title_arrow"> > </i></a>
+                                </dt>
+                                <dd class="subcate_con clearfix">
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                </dd>
+                              </dl>
+                        </div>
+                        <div class="guessLike">
+                          <h3>猜你喜欢</h3>
+                          <ul class="like_list clearfix">
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="item-href"><span class="iconfont icon-4259"></span>图书文娱</a>
+                    <div class="item-menu">
+                        <div class="subcate">
+                            <dl class="subcate_item">
+                              <dt class="subcate_title">
+                                <a href="#" class="subcate_link">图书文娱<i class="subcate_title_arrow"> > </i></a>
+                              </dt>
+                              <dd class="subcate_con clearfix">
+                                <a href="#" class="subcate_con_lk">图书文娱</a>
+                                <a href="#" class="subcate_con_lk">图书文娱9999999999</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                                <a href="#" class="subcate_con_lk">超薄电视</a>
+                              </dd>
+                            </dl>
+                            <dl class="subcate_item">
+                                <dt class="subcate_title">
+                                  <a href="#" class="subcate_link">电视<i class="subcate_title_arrow"> > </i></a>
+                                </dt>
+                                <dd class="subcate_con clearfix">
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                </dd>
+                              </dl>
+                              <dl class="subcate_item">
+                                <dt class="subcate_title">
+                                  <a href="#" class="subcate_link">电视<i class="subcate_title_arrow"> > </i></a>
+                                </dt>
+                                <dd class="subcate_con clearfix">
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                                </dd>
+                              </dl>
+                        </div>
+                        <div class="guessLike">
+                          <h3>猜你喜欢</h3>
+                          <ul class="like_list clearfix">
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                              <li class="like-item">
+                                  <a href="#" class="like_lk">
+                                      <img src="../img/good.png" alt="">
+                                      <p>分布式无线路由器</p>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 轮播图开始---利用opacity在JS中操作 -->
+        <div class="banner-wrap">
+          <div class="banner">
+            <ul class="swiper" id="swiper">
+             <li class="swiper-item">
+                <a href="#"><img src="../img/lanya.png" alt=""></a>
+              </li>
+              <li class="swiper-item">
+                <a href="#"><img src="../img/phone.png" alt=""></a>
+              </li>
+              <li class="swiper-item">
+                <a href="#"><img src="../img/kongtiao.png" alt=""></a>
+              </li>  
+            </ul>
+            <!-- 轮播图添加按钮 -->
+            <div class="prev swiper-arrow"> < </div>
+            <div class="next swiper-arrow"> > </div>
+            <!-- 添加轮播图圆点 -->
+            <div id="indicators" class="indicators">
+             <!--  <div class="on indicator" data-index="0"></div>
+              <div class="indicator" data-index="1"></div>
+              <div class="indicator" data-index="2"></div> -->
+            </div>
+          </div>
+        </div>
+        <!-- 轮播图结束 -->
+    </div>
+    <!-- 商品分类结束 -->
+
+    <!-- 秒杀专区开始 -->
+    <div id="miaosha" class="miaosha w clearfix">
+      <div class="ms_timer">
+        <div class="miaosha-tit">秒杀抢购</div>
+        <span class="iconfont icon-alarm"></span>
+        <div class="miaosha-desc">本场距离结束还剩</div>
+        <div class="countdown clearfix">
+          <div class="cd_item cd_hour">--</div>
+          <div class="cd_item cd_minute">--</div>
+          <div class="cd_item cd_second">--</div>
+        </div>
+      </div>
+      <div class="miaosha-list clearfix">
+        <div class="miaosha-item">
+          <a href="#" class="miaosha-item-lk">
+            <img src="../img/good.png" alt="" class="miaosha-item-img">
+            <p class="miaosha-item-name">分布式无线路由器</p>
+            <div class="miaosha-item-buy">
+              <span class="progress"><span class="progress-bar"></span></span>
+              <span class="buy-num">已抢30%</span>
+            </div>
+            <div class="miaosha-item-price clearfix">
+              <span class="cm-price new-price">￥549.00</span>
+              <span class="cm-price origin-price">￥690.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="miaosha-item">
+          <a href="#" class="miaosha-item-lk">
+            <img src="../img/good.png" alt="" class="miaosha-item-img">
+            <p class="miaosha-item-name">分布式无线路由器</p>
+            <div class="miaosha-item-buy">
+              <span class="progress"><span class="progress-bar"></span></span>
+              <span class="buy-num">已抢30%</span>
+            </div>
+            <div class="miaosha-item-price clearfix">
+              <span class="cm-price new-price">￥549.00</span>
+              <span class="cm-price origin-price">￥690.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="miaosha-item">
+          <a href="#" class="miaosha-item-lk">
+            <img src="../img/good.png" alt="" class="miaosha-item-img">
+            <p class="miaosha-item-name">分布式无线路由器</p>
+            <div class="miaosha-item-buy">
+              <span class="progress"><span class="progress-bar"></span></span>
+              <span class="buy-num">已抢30%</span>
+            </div>
+            <div class="miaosha-item-price clearfix">
+              <span class="cm-price new-price">￥549.00</span>
+              <span class="cm-price origin-price">￥690.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="miaosha-item">
+          <a href="#" class="miaosha-item-lk">
+            <img src="../img/good.png" alt="" class="miaosha-item-img">
+            <p class="miaosha-item-name">分布式无线路由器</p>
+            <div class="miaosha-item-buy">
+              <span class="progress"><span class="progress-bar"></span></span>
+              <span class="buy-num">已抢30%</span>
+            </div>
+            <div class="miaosha-item-price clearfix">
+              <span class="cm-price new-price">￥549.00</span>
+              <span class="cm-price origin-price">￥690.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="miaosha-item">
+          <a href="#" class="miaosha-item-lk">
+            <img src="../img/good.png" alt="" class="miaosha-item-img">
+            <p class="miaosha-item-name">分布式无线路由器</p>
+            <div class="miaosha-item-buy">
+              <span class="progress"><span class="progress-bar"></span></span>
+              <span class="buy-num">已抢30%</span>
+            </div>
+            <div class="miaosha-item-price clearfix">
+              <span class="cm-price new-price">￥549.00</span>
+              <span class="cm-price origin-price">￥690.00</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 秒杀专区结束 -->
+    <!-- 热门专区模块开始 -->
+    <div id="hotsale" class="layer w">
+      <div class="layer-inner">
+        <h3 class="hotSale">热卖单品</h3>
+        <ul class="saleList clearfix">
+          <li class="bs-item item">
+            <a href="">
+              <img src="../img/good.png" alt="" class="item-img">
+              <p class="title">分布式无线路由器</p>
+              <div class="line-2 clearfix">
+                <span class="comment">评论<em>8888</em></span>
+                <span class="collect">收藏<em>8888</em></span>
+              </div>
+              <div class="line-3">
+                <span class="strong">1100</span>
+                <span class="price-through">￥2400</span>
+                <span class="sell">月销1000笔</span>
+              </div>
+            </a>
+          </li>
+          <li class="bs-item item">
+            <a href="">
+              <img src="../img/good.png" alt="" class="item-img">
+              <p class="title">分布式无线路由器</p>
+              <div class="line-2 clearfix">
+                <span class="comment">评论<em>8888</em></span>
+                <span class="collect">收藏<em>8888</em></span>
+              </div>
+              <div class="line-3">
+                <span class="strong">1100</span>
+                <span class="price-through">￥2400</span>
+                <span class="sell">月销1000笔</span>
+              </div>
+            </a>
+          </li>
+          <li class="bs-item item">
+            <a href="">
+              <img src="../img/good.png" alt="" class="item-img">
+              <p class="title">分布式无线路由器</p>
+              <div class="line-2 clearfix">
+                <span class="comment">评论<em>8888</em></span>
+                <span class="collect">收藏<em>8888</em></span>
+              </div>
+              <div class="line-3">
+                <span class="strong">1100</span>
+                <span class="price-through">￥2400</span>
+                <span class="sell">月销1000笔</span>
+              </div>
+            </a>
+          </li>
+          <li class="bs-item item">
+            <a href="">
+              <img src="../img/good.png" alt="" class="item-img">
+              <p class="title">分布式无线路由器</p>
+              <div class="line-2 clearfix">
+                <span class="comment">评论<em>8888</em></span>
+                <span class="collect">收藏<em>8888</em></span>
+              </div>
+              <div class="line-3">
+                <span class="strong">1100</span>
+                <span class="price-through">￥2400</span>
+                <span class="sell">月销1000笔</span>
+              </div>
+            </a>
+          </li>
+          <li class="bs-item item">
+            <a href="">
+              <img src="../img/good.png" alt="" class="item-img">
+              <p class="title">分布式无线路由器</p>
+              <div class="line-2 clearfix">
+                <span class="comment">评论<em>8888</em></span>
+                <span class="collect">收藏<em>8888</em></span>
+              </div>
+              <div class="line-3">
+                <span class="strong">1100</span>
+                <span class="price-through">￥2400</span>
+                <span class="sell">月销1000笔</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 热门专区结束 -->
+
+    <!-- 推荐喜欢列表的布局开始 -->
+    <div id="guesslike" class="layer w">
+      <div class="layer-inner">
+        <h3 class="likeSale">猜你喜欢</h3>
+        <ul id="gl" class="saleList clearfix">
+          <li class="like-item item">
+            <a href="http://hrss.sz.gov.cn/szksy/wsbs/zzbm/">
+              <img src="../img/good.png" alt="" class="item-img">
+            </a>
+            <p class="title">分布式无线路由器</p>
+            <div class="line-3">
+              <span class="strong">1100</span>
+              <span class="sell">月销3000笔</span>
+            </div>
+            <a href="https://www.baidu.com" class="item-more">发现更多相似的宝贝</a>
+          </li>
+          <li class="like-item item">
+            <a href="http://hrss.sz.gov.cn/szksy/wsbs/zzbm/">
+              <img src="../img/good.png" alt="" class="item-img">
+            </a>
+            <p class="title">分布式无线路由器</p>
+            <div class="line-3">
+              <span class="strong">1100</span>
+              <span class="sell">月销3000笔</span>
+            </div>
+            <a href="https://www.baidu.com" class="item-more">发现更多相似的宝贝</a>
+          </li>
+          <li class="like-item item">
+            <a href="http://hrss.sz.gov.cn/szksy/wsbs/zzbm/">
+              <img src="../img/good.png" alt="" class="item-img">
+            </a>
+            <p class="title">分布式无线路由器</p>
+            <div class="line-3">
+              <span class="strong">1100</span>
+              <span class="sell">月销3000笔</span>
+            </div>
+            <a href="https://www.baidu.com" class="item-more">发现更多相似的宝贝</a>
+          </li>
+          <li class="like-item item">
+            <a href="http://hrss.sz.gov.cn/szksy/wsbs/zzbm/">
+              <img src="../img/good.png" alt="" class="item-img">
+            </a>
+            <p class="title">分布式无线路由器</p>
+            <div class="line-3">
+              <span class="strong">1100</span>
+              <span class="sell">月销3000笔</span>
+            </div>
+            <a href="https://www.baidu.com" class="item-more">发现更多相似的宝贝</a>
+          </li>
+          <li class="like-item item">
+            <a href="http://hrss.sz.gov.cn/szksy/wsbs/zzbm/">
+              <img src="../img/good.png" alt="" class="item-img">
+            </a>
+            <p class="title">分布式无线路由器</p>
+            <div class="line-3">
+              <span class="strong">1100</span>
+              <span class="sell">月销3000笔</span>
+            </div>
+            <a href="https://www.baidu.com" class="item-more">发现更多相似的宝贝</a>
+          </li>
+          <li class="like-item item">
+            <a href="http://hrss.sz.gov.cn/szksy/wsbs/zzbm/">
+              <img src="../img/good.png" alt="" class="item-img">
+            </a>
+            <p class="title">分布式无线路由器</p>
+            <div class="line-3">
+              <span class="strong">1100</span>
+              <span class="sell">月销3000笔</span>
+            </div>
+            <a href="https://www.baidu.com" class="item-more">发现更多相似的宝贝</a>
+          </li>
+          <li class="like-item item">
+            <a href="http://hrss.sz.gov.cn/szksy/wsbs/zzbm/">
+              <img src="../img/good.png" alt="" class="item-img">
+            </a>
+            <p class="title">分布式无线路由器</p>
+            <div class="line-3">
+              <span class="strong">1100</span>
+              <span class="sell">月销3000笔</span>
+            </div>
+            <a href="https://www.baidu.com" class="item-more">发现更多相似的宝贝</a>
+          </li>
+          <li class="like-item item">
+            <a href="http://hrss.sz.gov.cn/szksy/wsbs/zzbm/">
+              <img src="../img/good.png" alt="" class="item-img">
+            </a>
+            <p class="title">分布式无线路由器</p>
+            <div class="line-3">
+              <span class="strong">1100</span>
+              <span class="sell">月销3000笔</span>
+            </div>
+            <a href="https://www.baidu.com" class="item-more">发现更多相似的宝贝</a>
+          </li>
+          <li class="like-item item">
+            <a href="http://hrss.sz.gov.cn/szksy/wsbs/zzbm/">
+              <img src="../img/good.png" alt="" class="item-img">
+            </a>
+            <p class="title">分布式无线路由器</p>
+            <div class="line-3">
+              <span class="strong">1100</span>
+              <span class="sell">月销3000笔</span>
+            </div>
+            <a href="https://www.baidu.com" class="item-more">发现更多相似的宝贝</a>
+          </li>
+        </ul>
+        <!-- 加载更多 -->
+        <div class="loadMore"><span>加载更多</span></div>
+      </div>
+    </div>
+
+    <!-- 推荐喜欢列表的布局结束 -->
+    <!-- 底部版权信息开始 -->
+    <div class="footer">
+      <div class="footer_container w">
+        <div class="footer_social">
+          <a href="">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAmVBMVEUAAADrXVzqXVzsXVzrXVzrXVzqXFvrXVzrXFzrXFzrXFvsXVztXV3qXVzqXVzrXVzrXVzsXVzqXVzrXVzrXVzrXFvrXVztXl3sXV3sXFvqXFvrXVzrXVzrXVzrXV3rXVzsXl3sXl3sXFvsXVztW1vtXFvrXVzqXFzrXVzqXFvsXVzrXFvtXFvuW1vsXFzsXl3rXV3sWlnqXVwFstRJAAAAMnRSTlMAyfJk6OPTqFxTQTsx+M+bjHf12bCfhE5GFN/BvLeUfVZJLBoMBezEiW1fNyUdCnFrAybGT4MAAAEmSURBVCjPbZLZcoMwDEUvxmwhrAkEsidAs7RJW/3/x9VgA4XxeREzZyxZF2PgM3EMxmzntMCczYEGDHeiyjVNuH2NbvlBczaDIw2FdO+UdMjOe9KyhWBBE5zkbskvE4AxlZ6/REwtvPl3GxY9dqLs+EFZD6ferUvg2nareARqieAol3URHs4LO/IChF1SsNW5MZFgn2FFAgspyYoqDrmR+0KSIzdgCLr6hEfkHEWMD5T9/VPZgH5fFEDuVQ6bc8j/AZNcPzuLQhUKJUPkXb3W9H1i7cnjmGcGXwVZ8PvlbFMO5KRwoYZaF9/0TLdBsetdWgObfkKcPN04pIEEApu0sAaCl1766uXpnAnFRe8U19lca/qwf1aj4skbM7zjbcuYZURuDcUf0IRfo5ZkTFQAAAAASUVORK5CYII="
+             alt="官方微博">
+          </a>
+          <a href="">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAA6lBMVEUAAABQt3RIvHRQtnVQtnRRtXRPtnRQtnRNuHFPuHVPt3RQtnRPt3NQtnRRtnRPt3RPtnRQtnRPuHVNuHNQtnJKvXJQtnRQtnRRtnNPtnRNvW9OuHZYtnJQtnRQuXJOt3ZNuXNPtnRWs3NPtnNPtnVPuHVOuHZLumpZrYRPt3ROt3NcrHFPuHNOtXJOuXFSs3hLu3ZStXxWsHQ+xXVKu21QuXJMuHJQtnNQt3VOt2k4y3dQt3RQtXUz0E5YrG1eqogu0kgx0ncz0XhDwWJUtXlQtnRRtnRQtnVTtHRRtnVWsXVbq3NTtHdcqoV/VWtCAAAARXRSTlMAOAPg8u/Y0HEM+va1sZV2Zl1PQBoG3cy+p1UqHuXMx8TDv6ugm4JeXVpFNTAlFOrg1LOxlYmHhXt4YGBTUUxLRkM0LhBCU+vDAAABTUlEQVQoz22S5ZrCMBBFb4WiVVp8cZd1d0sF2Pd/naVTo8D5k3ZO5pvvJkEMp9arGTE7eCzjEKPGYqp6Spkltodjd5uJW4gsjeu+R+57ww6x3S8Q+YLNjnA2LZJ9l51C8t083FrP6ZpS2evVAWRpRm0F4iEZccaDI9cBOBMom9ASa2BMsomlM8CvlwWyTiQVyP6yq+VzHPiZqmmKEMke6FNGwM903tpN6q9JVlDwlwxP7lNFwI1LVRRpZo5OY2qhfYf6NfiMt6sWITGyBg+sOOCVQ2MGjCgLZEYUAFjJXQz9QFWMg1zyiyDVRpE7p2FDlANJf24jdG3KqgMSWcJm96YvVSqJecAIJVmv0CtVSiU7TnC1ZSewg+wtl5267AWIt7/jvvUzQj6Yl3bueoKYpWQ7++4y/bBzAtuG7d7Fk4U0VuO2K4ii0FEmeYT8AzRaeyGGpXtyAAAAAElFTkSuQmCC" 
+            alt="官方公众号">
+          </a>
+          <a href="">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAz1BMVEUAAAAvpd4wpd0wpd4tpuAxqt4wpd4vpd4wqN0ppuImquUwpN0wpd4vpd8wpd0up98wpt4wpd0vpt0tpN8vqd4speMvpd0opeI0pdgvpt4vpd0rpOEwpd0xpd0wpd0sqeAqquIurOEtqN8upd4nqOUpqOIupOgsouAvoNsqp+E1qdovpd4wpd4vpd0xo90wpdkun9wvpt0vpd4imukgwewyouEemOwdme0to9wmqOQ5stwwpd0xpdwzpdsxpNwwpdwvpN03qtczp90yotw4mNeIn8/UAAAAO3RSTlMA8t/YTzfuz1wMBujiy8rEsKGSgHlCPSj++vbyvLWrlXBhVkUxGxTg1MPBp6aZmI6Jd2lgUUtDNC8hH6zWnXoAAAEaSURBVCjPbZLneoJQDIY/tgqyRKh71u69e8DR9v6vqQ+eEHq07y+SN0DyJGCsh2vf1pxx0sUh5lAwfkNRpyPxl+IiA2Npa6HaE7Nyb7tcHJB/vUrX7LOr2e4+UXJJTmVjlG6x5YRxEwe1LXt2OIzL2kcOPcDiYIQ999y5iQ7LdylbPbLFBCEXriDRKbMO4FX/b4O4E4SOXjV2XMmu2MiUDY1etFeocGjwPgySCTsewEVITxlqPOqCR7kaf9AoYeTKVISU17SkPQxyarEBGCQ7IDIpi0ETMKmwbabzoTNLFxF9aVpWnhfiP2x5QCyVZVvY8/xzfCbFE4gXcXRgMzBLQ3Vn6mFPdfFdrcpNWlBpzSeBrmm6f9togvgFmINuYDwpQKQAAAAASUVORK5CYII=" 
+            alt="客服QQ">
+          </a>
+        </div>
+        <ul class="footer_link">
+          <li><a>关于我们</a></li>
+          <li><a>联系我们</a></li>
+          <li><a>帮助中心</a></li>
+          <li><a>加入我们</a></li>
+          <li><a>讲师合作</a></li>
+          <li><a>友情链接</a></li>
+        </ul>
+        <div class="footer_copyright">Copyright © 2018 Company,lnc.粤ICP备15092968号 Trems</div>
+      </div>
+    </div>
+
+    <!-- 底部版权信息结束 -->
+    <!-- 悬浮菜单 -->
+    <div class="tool">
+      <a href="#miaosha" class="on tool-item1">秒杀<br>抢购</a>
+      <a href="#hotsale" class="tool-item2">热卖<br>单品</a>
+      <a href="#guesslike" class="tool-item3">猜你<br>喜欢</a>
+      <a id="goTop" class="tool-item4" onclick="goTop()"><span class="top-arrow"></span>顶部</a>
+      <a class="tool-item5">反馈</a>
+    </div>
+
+    <script src="../JS/ajax.js"></script>
+    <script src="../JS/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+    "data":[
+    {
+        "id":1,
+        "suggestname":"html5rr"
+    },
+    {
+        "id":2,
+        "suggestname":"css3"
+    },
+    {
+        "id":3,
+        "suggestname":"js"
+    }
+    ],
+    "code":0,
+    "msg":"请求成功"
+        
+    
+}

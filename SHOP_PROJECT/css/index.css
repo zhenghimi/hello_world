@@ -1,0 +1,753 @@
+/* 1、初始化样式开始 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,button, input{
+    font: 12px arial;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: #666;
+    text-decoration: none;
+}
+
+input, button{
+    border: none;
+    outline: none;
+}
+/* 初始化样式结束 */
+
+body {
+    background-color:#f8fafc;
+}
+.w {
+    width: 1190px;
+    margin: 0 auto;
+}
+/* 2、清除浮动开始 */
+.clearfix{
+    *zoom: 1;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+/* 清除浮动结束 */
+
+
+/* 3、顶部栏样式 */
+.top-nav {
+    background-color: #f5f5f5;
+    padding: 10px 0;
+    font-size: 12px; 
+}
+
+.top-nav .login{
+    float: left;
+}
+.top-nav .login .h{
+   color: red;
+   margin-right: 6px;
+}
+/* 设置导航栏右边的元素 */
+.top-nav .nav-list{
+    float: right;
+}
+.top-nav .nav-list li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* 搜索框开始 */
+.serachWrap .w{
+    position: relative;
+}
+.logo{
+    position: absolute;
+    top: 33px;
+    left: 15px;
+    width: 150px;
+    height: 56px;
+    line-height: 56px;
+    font-size: 40px;
+    color: #e63e3e;
+    font-weight: bold;
+    text-align: center;
+}
+.search-box{
+    padding: 40px 0 40px 300px;
+}
+.search-box .searchInput{
+    float: left;
+    width: 530px;
+    height: 40px;
+    border: 1px solid #ddd;
+    padding:0 10px ;
+    font-size: 15px;
+}
+.search-box .serach-btn{
+    float: left;
+    width: 50px;
+    height: 42px;
+    background-color:#e63e3e;
+    color:#fff ;
+
+}
+/* 搜索框的建议开始 */
+.search-suggest{
+    display: none;
+    position:absolute;
+    top: 82px;
+    width: 550px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    /* 设置搜索框建议不被轮播图遮住 */
+    z-index: 1000;
+}
+ul.search-suggest li{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 0 10px;
+}
+/*  搜索框的建议结束 */
+/* 搜索框结束 */
+/* 商品分类开始 */
+.menu{
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.aside-nav{
+    float: left;
+    width: 200px;
+    height: 500px;
+    /* 阴影部分 */
+    box-shadow: 2px 6px 9px rgba(0, 0, 0, .2);
+}
+/* 一级分类的样式 */
+.list-item .item-href{
+    display: block;
+    height: 50px;
+    margin: 0 20px;
+    line-height: 50px;
+    color: #333;
+    border-bottom: 1px dotted #ddd;
+    box-sizing: border-box;
+}
+/* 清除底部dotted虚线 */
+.list-item:last-child .item-href{
+    border: none;
+}
+.list-item .iconfont{
+    float: left;
+    margin-right: 5px;
+    color: #e63e3e;
+
+}
+.list-item:hover .iconfont{
+    color: #fff;
+
+}
+
+
+
+.nav-list{
+    position: relative;
+}
+/* 鼠标悬停在一级菜单设置背景色 */
+.list-item:hover,
+.list-item:hover .item-href{
+    background-color: #e63625;
+    color: #fff;
+}
+
+
+
+
+
+/* 二级分类的样式 */
+.nav-list .item-menu{
+    display: none;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    width: 900px;
+    min-height: 500px;
+    background-color: #fff;
+    box-shadow:2px 2px 9px rgba(0, 0, 0, .2);
+    z-index: 999;
+}
+/* 二级菜单默认隐藏，只有鼠标停留在以及菜单才会显示开始 */
+.list-item:hover .item-menu{
+    display: block;
+
+}
+/* 二级菜单默认..结束 */
+.subcate{
+    float: left;
+    width: 610px;
+    padding: 30px 20px 20px 20px;
+}
+.subcate .subcate_item{
+    position: relative;
+    padding-left: 80px;
+}
+.subcate .subcate_item .subcate_title{
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 70px;
+    text-align: right;
+    /* 超出 宽度不换行，用..代替*/
+    white-space: nowrap;
+    text-overflow:ellipsis ;
+    overflow: hidden;
+    font-weight: 700;
+
+}
+.subcate_title .subcate_title_arrow{
+    margin-left: 5px;
+}
+.subcate .subcate_con{
+    padding: 5px 0;
+}
+
+.subcate .subcate_con .subcate_con_lk{
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    border-left:  1px solid #ddd;
+    padding: 0 10px;
+    margin: 3px 0;
+}
+.subcate .subcate_link:hover,
+.subcate .subcate_con .subcate_con_lk:hover{
+    color: #e63625;
+
+}
+/* 商品分类结束 */
+
+/* 猜你喜欢二级分类样式 */
+.guessLike{
+    float: left;
+    width: 250px;
+    padding-top: 30px;
+}
+.guessLike h3{
+    color: #666;
+    text-align: center;
+}
+ .like-item{
+    float: left;
+}
+.like-item .like_lk{
+    display: block;
+    width: 100px;
+    padding: 10px 0 0 15px;
+} 
+.like-item .like_lk img{
+    width: 100px;
+    height: 100px;
+}
+/* 猜你喜欢图片透明度设置 */
+.like_lk:hover img{
+    opacity: .8;
+    filter:alpha(opacity=80) ;
+}
+/* 猜你喜欢样式 */
+.like-item .like_lk p{
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #666;
+}
+.like_lk:hover p{
+    color: #e63625;
+}
+/* 轮播图样式开始 */
+.banner-wrap{
+    float: left;
+    margin-left: 20px;
+}
+.banner-wrap .banner{
+    position: relative;
+    width: 970px;
+    height: 500px;
+}
+.banner-wrap .banner ul{
+    /* 将图片横排一行display: flex; */
+    display: flex;
+    width: 100%;
+}
+/* 轮播图时间3s */
+.banner-wrap .banner ul li{
+    transition: opacity .3;
+}
+.banner-wrap .banner ul li a{
+    display: block;
+    width: 970px;
+    height: 500px;
+}
+.banner-wrap .banner ul li a img{
+    width: 100%;
+    height: 100%;
+}
+/* 轮播图箭头 */
+.prev{
+    left: 30px;
+}
+.next{
+    right: 30px;
+}
+.swiper-arrow{
+    position: absolute;
+    top: 50%;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .4);
+    /* 箭头垂直居中,高度知道不知道都可以使用 */
+    transform: translateY(-50%);
+    /* 这是第二种垂直居中，已知高度是36px，则:margin-top:-18px;设置Wie高度的一半 */
+    /* 鼠标移上去有一个小手cursor: pointer; */
+    cursor: pointer;
+}
+
+/* 轮播图圆点 */
+.indicators{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 14px;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius:10px;
+}
+
+.indicators .indicator{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* 轮播图圆点颜色 */
+.indicators .on{
+    background-color: #ff5000;
+}
+
+/* 轮播图结束 */
+
+/* 秒杀专区开始 */
+.miaosha{
+    margin-top: 30px;
+    padding-bottom: 40px;
+}
+.miaosha .ms_timer{
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 275px;
+    background-color: #e63e3e;
+    color: #fff;
+
+}
+.ms_timer .miaosha-tit{
+    text-align: center;
+    font-size: 34px;
+    margin-top: 40px;
+}
+.ms_timer .icon-alarm{
+    position: absolute;
+    top: 93px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+
+}
+.ms_timer .miaosha-desc{
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+}
+.countdown{
+    position: absolute;
+    left: 32.5px;
+    bottom: 20px;
+}
+.countdown .cd_item{
+    float: left;
+    width: 40px;
+    height: 40px;
+    line-height:40px;
+    text-align: center;
+    background-color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.miaosha-list{
+    float: left;
+    width: 990px;
+    height: 275px;
+}
+.miaosha-list .miaosha-item{
+    float: left;
+    width: 198px;
+    height: 275px;
+    background-color: #fff;
+}
+.miaosha-item-lk{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+}
+.miaosha-item-lk .miaosha-item-img{
+    display: block;
+    width: 140px;
+    height: 140px;
+    padding: 20px;
+    margin: auto;
+}
+/* 鼠标悬停在图片放大 transform: scale(1.1)缩放元素 */
+.miaosha-item-lk:hover .miaosha-item-img{
+    transform: scale(1.1);
+    transition:transform .5s ease;
+
+}
+/* 鼠标悬停文字变红色 */
+.miaosha-item-lk .miaosha-item-name{
+    padding: 0 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.miaosha-item-lk:hover .miaosha-item-name{
+    color:#e63625 ;
+}
+.miaosha-item-buy{
+    line-height: 20px;
+    margin: 10px 0;
+    text-align: center;
+} 
+/* 进度条开始 */
+.miaosha-item-buy .progress{
+    display: inline-block;
+    width: 100px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 5px 5px 0 0;
+}
+.miaosha-item-buy .progress .progress-bar{
+    display: block;
+    width: 30%;
+    height: 10px;
+    background-color: #e63e3e;
+    border-radius: 5px 0 0 5px;
+}
+/* 进度条结束 */
+.miaosha-item-buy .buy-num{
+    display: inline-block;
+    color: #e63e3e;
+    font-size: 12px;
+}
+.miaosha-item-price{
+    display: block;
+    width: 160px;
+    margin: auto;
+    border: 1px solid #e63e3e;
+}
+.miaosha-item-price .cm-price{
+    float: left;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.miaosha-item-price .new-price{
+    font-size: 14px;
+    background-color: #e63e3e;
+    color: #fff;
+    font-weight: bold;
+}
+.miaosha-item-price .origin-price{
+    font-size: 12px;
+    color: #999;
+    text-decoration: line-through;
+
+}
+/* 秒杀专区结束 */
+
+/* 专题专区开始 */
+.layer{
+    padding-bottom: 50px;
+}
+.layer-inner{
+    background-color: #fff;
+}
+.layer-inner h3{
+    padding: 20px;
+    font-size: 20px;
+    height: 22px;
+    line-height: 22px;
+    border-bottom: 1px solid #f5f5f5;
+}
+.layer-inner h3::before{
+    content: "";
+    float: left;
+    width: 4px;
+    height: 16px;
+    margin: 3px 6px 0 0;
+}
+.hotSale{
+    color: #e63625;
+}
+.likeSale{
+    color: #ff9f00;
+
+}
+.likeSale::before{
+    background-color: #ff9;
+}
+.hotSale::before{
+    background-color: #e63625;
+}
+
+.saleList .item{
+    position: relative;
+    float: left;
+    width: 196px;
+    padding: 20px;
+    border: 1px solid #f8fafc;
+}
+.saleList .bs-item:hover{
+    /* 添加hover属性和box-shadow可以实现元素的高亮 */
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+
+}
+.saleList .like-item:hover{
+    border-color: #e63e3e;
+    /* 添加过渡效果 */
+    transition: border-color .3s;
+}
+
+.saleList .item a{
+    display: block;
+
+}
+
+.saleList .item a .item-img{
+    width: 196px;
+    height: 196px;
+}
+.saleList .item .title{
+    font-size: 14px;
+    color: #666;
+    height: 40px;
+    line-height: 20px;
+    /* 超出部分隐藏 */
+    overflow: hidden;
+    margin: 8px 0;
+}
+.saleList .line-2{
+    margin-bottom: 10px;
+}
+
+.saleList .comment,
+.saleList .collect{
+    float: left;
+    color: #999;
+    margin-right: 10px;
+}
+.saleList .comment em,
+.saleList .collect em{
+   font-style: normal;
+   margin-left: 5px;
+   
+}
+.saleList .strong{
+    color: #e63625;
+    font-size: 22px;
+    margin-right: 2px;
+}
+
+.saleList .strong::before{
+    /* content: "\A5";是在元素前面加￥符号 */
+    content: "\A5";
+    font-size: 14px;
+    color: #e63625;
+    margin-right: 3px;
+}
+.saleList .price-through{
+    text-decoration: line-through;
+    color: #999;
+}
+.saleList .sell{
+    float: right;
+    color: #999;
+    margin-top: 5px;
+}
+/* 专题专区结束 */
+
+/* 推荐喜欢列表样式 */
+.saleList .item .item-more{
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    background-color: #e63e3e;
+    color: #fff;
+}
+.saleList .like-item:hover .item-more{
+    display: block;
+}
+/* 加载更多 */
+.loadMore{
+    padding: 30px 0;
+}
+.loadMore span{
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #e63e3e;
+    margin: 0 auto;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+/* 底部样式 */
+.footer{
+    background-color: #fff;
+}
+.footer_container{
+    height: 144px;
+    padding-top:15px; ;
+
+}
+.footer_social{
+    height: 48px;
+    text-align: center;
+}
+.footer_social a{
+    display: inline-block;
+    height: 48px;
+}
+.footer_social a img{
+    height: 28px;
+    padding: 10px 20px;
+
+}
+.footer_link{
+    text-align: center;
+    margin: 10px 0;
+
+}
+.footer_link li{
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+.footer_link li a:hover{
+    text-decoration: underline;
+}
+.footer_copyright{
+    color: #5e5e5e;
+    width: 450px;
+    margin:5px auto;
+    border-top: 1px solid #000;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* 悬浮菜单 */
+.tool {
+    position: fixed;
+    top: 80px;
+    right: 10px;
+    width: 50px;
+    text-align: center;
+    z-index: 10;
+}
+.tool a{
+    position: relative;
+    display: block;
+    font-size: 13px;
+    height: 44px;
+    line-height: 17px;
+    background-color: #fff;
+    padding: 8px 8px 0;
+    cursor: pointer;
+}
+.tool a::after{
+    content: "";
+    position: absolute;
+    left: 8px;
+    bottom: -1px;
+    width: 34px;
+    border-bottom: 1px solid #efefef;
+    z-index: 5;
+}
+.tool a.on,.tool a:hover{
+    background-color: #e63e3e;
+    color: #fff;
+    z-index: 6px;
+}
+a.tool-item1{
+    color: #e63e3e;
+}
+a.tool-item2{
+    color: #28ABFF;
+}
+a.tool-item3{
+    color: #ff9f00;
+}
+a.tool-item5{
+    line-height: 40px;
+}
+/*  三角形箭头  */
+.top-arrow{
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-top: 1.5px solid #999;
+    border-left: 1.5px solid #999;
+    transform: rotate(45deg);
+    margin:5px auto;
+
+}
+.tool a:hover,.top-arrow{
+    border-color: #fff;
+}
+
+#goTop{
+    display: none;
+}
